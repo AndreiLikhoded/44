@@ -22,5 +22,40 @@
     <li class="${customer?item_parity}">${client.firstName} ${client.lastName}</li>
 </#list>
 </ul>
+
+<div class="table flex flex-col">
+    <div class="header flex">
+        <div class="column">
+            ##
+        </div>
+        <div class="column">
+            Имя
+        </div>
+        <div class="column">
+            Фамилия
+        </div>
+
+        <div class="column">
+            Четность строки
+        </div>
+    </div>
+
+    <#list customers as customer>
+    <div class="row ${client?item_parity} flex">
+        <div class="column">
+            ${client?counter}
+        </div>
+        <div class="column">
+            ${client.firstName!"-- не указано --"}
+        </div>
+        <div class="column">
+            ${client.lastName!"-- не указано --"}
+        </div>
+
+        <div class="column">
+            ${client?item_parity}
+        </div>
+    </div>
+</#list>
 </body>
 </html>
