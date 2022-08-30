@@ -6,5 +6,21 @@
 </head>
 <body>
 
+<div class="container">
+    <p>Сегодня ${currentDateTime}</p>
+
+    <h1>FreeMarker library page</h1>
+    <p>${r"${clients}"}: ${clients}</p>
+    <p>${r"${clients.firstName}"}: ${clients.firstName}</p>
+    <p>${r"${clients.lastName}"}: ${clients.lastName}</p>
+    <p>${r"${currentDateTime}"}: ${currentDateTime}</p>
+    <p>${r"${currentDateTime.year}"}: ${currentDateTime.year} <i>(в формате с учетом региональных настроек)</i></p>
+</div>
+
+<ul>
+    <#list clients as client>
+    <li class="${customer?item_parity}">${client.firstName} ${client.lastName}</li>
+</#list>
+</ul>
 </body>
 </html>
