@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/LibraryData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/library.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson44Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson44Server.java" afterDir="false" />
-    </list>
+    <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +54,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kz.attractor.java" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/css" />
@@ -66,15 +64,13 @@
       <recent name="$PROJECT_DIR$/src/kz/attractor/java" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="kz.attractor.java.server" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AttractorSchool\homeWork44\data" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/web" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="kz.attractor.java" />
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="kz.attractor.java.server" />
     </key>
   </component>
   <component name="RunManager">
