@@ -18,6 +18,7 @@ public class Lesson44Server extends BasicServer {
         super(host, port);
         registerGet("/sample", this::freemarkerSampleHandler);
         registerGet("/library", this::freemarkerSampleLibrary);
+        registerGet("/test", this::testHandler);
     }
 
     private static Configuration initFreeMarker() {
@@ -46,39 +47,43 @@ public class Lesson44Server extends BasicServer {
     }
 
     private void freemarkerSampleLibrary(HttpExchange exchange) {
-        renderTemplate(exchange, "library.html", getLibraryData());
+        renderTemplate(exchange, "library.html", new LibraryData());
     }
 
-protected void renderTemplate(HttpExchange exchange, String templateFile, Object dataModel) {
-    try {
-        // загружаем шаблон из файла по имени.
-        // шаблон должен находится по пути, указанном в конфигурации
-        Template temp = freemarker.getTemplate(templateFile);
+    private void testHandler(HttpExchange exchange) {
+        renderTemplate(exchange, "test.html", new TestDataModel());
+    }
 
-        // freemarker записывает преобразованный шаблон в объект класса writer
-        // а наш сервер отправляет клиенту массивы байт
-        // по этому нам надо сделать "мост" между этими двумя системами
+    protected void renderTemplate(HttpExchange exchange, String templateFile, Object dataModel) {
+        try {
+            // загружаем шаблон из файла по имени.
+            // шаблон должен находится по пути, указанном в конфигурации
+            Template temp = freemarker.getTemplate(templateFile);
 
-        // создаём поток который сохраняет всё, что в него будет записано в байтовый массив
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        // создаём объект, который умеет писать в поток и который подходит для freemarker
-        try (OutputStreamWriter writer = new OutputStreamWriter(stream)) {
+            // freemarker записывает преобразованный шаблон в объект класса writer
+            // а наш сервер отправляет клиенту массивы байт
+            // по этому нам надо сделать "мост" между этими двумя системами
 
-            // обрабатываем шаблон заполняя его данными из модели
-            // и записываем результат в объект "записи"
-            temp.process(dataModel, writer);
-            writer.flush();
+            // создаём поток который сохраняет всё, что в него будет записано в байтовый массив
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            // создаём объект, который умеет писать в поток и который подходит для freemarker
+            try (OutputStreamWriter writer = new OutputStreamWriter(stream)) {
 
-            // получаем байтовый поток
-            var data = stream.toByteArray();
+                // обрабатываем шаблон заполняя его данными из модели
+                // и записываем результат в объект "записи"
+                temp.process(dataModel, writer);
+                writer.flush();
 
-            // отправляем результат клиенту
-            sendByteData(exchange, ResponseCodes.OK, ContentType.TEXT_HTML, data);
+                // получаем байтовый поток
+                var data = stream.toByteArray();
+
+                // отправляем результат клиенту
+                sendByteData(exchange, ResponseCodes.OK, ContentType.TEXT_HTML, data);
+            }
+        } catch (IOException | TemplateException e) {
+            e.printStackTrace();
         }
-    } catch (IOException | TemplateException e) {
-        e.printStackTrace();
     }
-}
 
     private SampleDataModel getSampleDataModel() {
         // возвращаем экземпляр тестовой модели-данных
@@ -86,7 +91,4 @@ protected void renderTemplate(HttpExchange exchange, String templateFile, Object
         return new SampleDataModel();
     }
 
-    private LibraryData getLibraryData(){
-        return new LibraryData();
-    }
 }

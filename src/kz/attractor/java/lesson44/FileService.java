@@ -9,21 +9,21 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Map;
 
 public class FileService {
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public static List<Clients> readFile(){
+    public static List<Client> readFile() {
         Gson gson = new Gson();
         Path path = Paths.get("./library.json");
 
         String json;
-        try{
+        try {
             json = Files.readString(path);
-        }catch (IOException e){
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return gson.fromJson(json, new TypeToken<List<Clients>>() {}.getType());
+        return gson.fromJson(json, new TypeToken<List<Client>>() {
+        }.getType());
     }
 }

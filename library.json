@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "firstname": "Andrei",
-    "lastname": "Likhoded",
+    "firstName": "Andrei",
+    "lastName": "Likhoded",
     "books": {
       "book": "Dostoevskii - Idiot"
     }

@@ -1,6 +1,6 @@
 package kz.attractor.java.lesson44;
 
-public class Clients {
+public class Client {
     private int id;
     private String firstName;
     private String lastName;

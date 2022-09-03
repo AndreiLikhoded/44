@@ -6,7 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="" />
+    <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Sampledocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/TestDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/library.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/library.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/Clients.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/Lesson44Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/Lesson44Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/LibraryData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/LibraryData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson44Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson44Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/LibraryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/LibraryData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,14 +65,15 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/AttractorSchool/gson-2.8.9.jar",
+    "last_opened_file_path": "C:/AttractorSchool/45",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="kz.attractor.java.lesson44" />
       <recent name="kz.attractor.java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -73,13 +92,26 @@
       <recent name="kz.attractor.java.server" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="kz.attractor.java.Main" />
       <module name="AttractorHttpServer" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kz.attractor.java.lesson44.TestClass" />
+      <module name="AttractorHttpServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.attractor.java.lesson44.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

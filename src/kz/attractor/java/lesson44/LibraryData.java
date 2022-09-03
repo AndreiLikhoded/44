@@ -5,16 +5,16 @@ import java.util.List;
 
 public class LibraryData {
 
-    List<Clients> clients = new ArrayList<Clients>();
+    List<Client> clients = new ArrayList<Client>();
     public LibraryData(){
         clients = FileService.readFile();
     }
 
-    public List<Clients> getClients() {
+    public List<Client> getClients() {
         return clients;
     }
 
-    public void setClients(List<Clients> clients) {
+    public void setClients(List<Client> clients) {
         this.clients = clients;
     }
 }
