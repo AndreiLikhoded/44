@@ -7,7 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson45Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/loginPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/reader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/ReadersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +29,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

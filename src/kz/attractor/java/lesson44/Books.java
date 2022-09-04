@@ -1,20 +1,65 @@
 package kz.attractor.java.lesson44;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Books {
-    private String book;
+    private String name;
 
-    public String getBook() {
-        return book;
+    private boolean busy;
+
+    private Integer bookId;
+
+    private transient Client client;
+
+
+    public Books(String name) {
+        this.name = name;
+
+        bookStatus();
     }
 
-    public void setBook(String book) {
-        this.book = book;
+    public void bookStatus() {
+        if (busy) {
+            List<Client> client = ReadersService.readFile();
+            for (Client clients : client) {
+                if (clients.getId().equals(bookId)) {
+                    this.client = clients;
+                }
+            }
+        }
     }
 
-    @Override
-    public String toString() {
-        return "Books{" +
-                "book='" + book + '\'' +
-                '}';
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isBusy() {
+        return busy;
+    }
+
+    public void setBusy(boolean busy) {
+        this.busy = busy;
+    }
+
+    public Integer getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(Integer bookId) {
+        this.bookId = bookId;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }
+

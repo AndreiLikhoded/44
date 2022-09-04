@@ -11,11 +11,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileService {
+public class ReadersService {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static final Path PATH = Paths.get("./books.json");
+    private static final Path PATH = Paths.get("./readers.json");
 
-    public static List<Books> readFile(){
+    public static List<Client> readFile(){
         String json = "";
         try{
             json = Files.readString(PATH);
@@ -23,12 +23,12 @@ public class FileService {
             e.printStackTrace();
         }
 
-        Books[] users = GSON.fromJson(json, Books[].class);
-        return new ArrayList<Books>(List.of(users));
+        Client[] clients = GSON.fromJson(json, Client[].class);
+        return new ArrayList<Client>(List.of(clients));
     }
 
-    public static void writeFile(List<Books> books){
-        String json = GSON.toJson(books);
+    public static void writeFile(List<Client> library){
+        String json = GSON.toJson(library);
         try{
             byte[] arr = json.getBytes();
             Files.write(PATH, arr);

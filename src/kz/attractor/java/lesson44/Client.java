@@ -1,40 +1,48 @@
 package kz.attractor.java.lesson44;
 
 public class Client {
-    private int id;
-    private String firstName;
-    private String lastName;
-    Books books;
+    private Integer id;
+    private String name;
+    private String email;
+    private int password;
 
-    public int getId() {
+
+    public Client(Integer id, String name, String email, int password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public Books getBooks() {
-        return books;
+    public int getPassword() {
+        return password;
     }
 
-    public void setBooks(Books books) {
-        this.books = books;
+    public void setPassword(int password) {
+        this.password = password;
     }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Employee</title>
+    <link href="css/freemarker.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <div class="table flex flex-col">
+        <div class="header flex">
+            <div class="column">
+                First Name
+            </div>
+            <div class="column">
+                Last Name
+            </div>
+            <div class="column">
+                Email
+            </div>
+        </div>
+        <#list clients as client>
+        <div class="row  flex">
+            <div class="column">
+                ${client.id}
+            </div>
+            <div class="column">
+                ${client.name!"-- не указано --"}
+            </div>
+            <div class="column">
+                ${client.email!"-- не указано --"}
+            </div>
+        </div>
+        </#list>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
