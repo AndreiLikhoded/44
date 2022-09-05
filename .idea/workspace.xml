@@ -7,17 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f773420-89a0-45eb-b583-baeec2116a30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/loginPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/reader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/ReadersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.json" beforeDir="false" afterPath="$PROJECT_DIR$/library.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Books.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/errorRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/errorRegistration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/successConnection.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/successConnection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/LibraryData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/lesson44/LibraryData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/server/BasicServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AttractorHttpServer/kz/attractor/java/server/BasicServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readers.json" beforeDir="false" afterPath="$PROJECT_DIR$/readers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson45Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/Lesson45Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/LibraryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/lesson44/LibraryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/server/BasicServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/server/BasicServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/server/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/server/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/service/ReadersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/service/ReadersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/system/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/system/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kz/attractor/java/system/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kz/attractor/java/system/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +41,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="kz.attractor.java.lesson44.TestClass" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kz.attractor.java.lesson44.TestClass" />
       <module name="AttractorHttpServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kz.attractor.java.lesson44.*" />
+          <option name="PATTERN" value="kz.attractor.java.system.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

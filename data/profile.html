@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Profile</title>
+    <link href="css/freemarker.css" rel="stylesheet">
 </head>
 <body>
-$END$
+<div class="container">
+
+    <div class="table flex flex-col">
+        <div class="header flex">
+            <div class="column">
+                First Name
+            </div>
+            <div class="column">
+                Last Name
+            </div>
+            <div class="column">
+                Email
+            </div>
+        </div>
+
+        <div class="row  flex">
+            <div class="column">
+                ${name!"-- не указано --"}
+            </div>
+            <div class="column">
+                ${id!"-- не указано --"}
+            </div>
+            <div class="column">
+                ${email!"-- не указано --"}
+            </div>
+        </div>
+
+        <#if books1??>
+        <p>On hand</p>
+        <#list books1 as book>
+        <div class="row ${book?item_parity} flex">
+            <div class="column">
+                ${book?counter}
+            </div>
+            <div class="column">
+                <a href="/books/book" rel="link">${book.name!'-- не указано --'}</a>
+            </div>
+            <div class="column">
+                ${book.busy?string('yes', 'no')}
+            </div>
+            <div class="column">
+                Empty
+            </div>
+        </div>
+    </#list>
+</#if>
+<#if books2??>
+<p>Retrieved to the library</p>
+<#list books2 as book>
+<div class="row ${book?item_parity} flex">
+    <div class="column">
+        ${book?counter}
+    </div>
+    <div class="column">
+        <a href="/books/book" rel="link">${book.name!'-- не указано --'}</a>
+    </div>
+    <div class="column">
+        ${book.busy?string('yes', 'no')}
+    </div>
+    <div class="column">
+        Empty
+    </div>
+</div>
+</#list>
+</#if>
+</div>
+
+
+</div>
+
+</div>
+
 </body>
 </html>

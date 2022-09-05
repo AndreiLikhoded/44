@@ -1,6 +1,10 @@
-package kz.attractor.java.lesson44;
+package kz.attractor.java.system;
 
+import kz.attractor.java.service.FileService;
+
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Client {
     private Integer id;
@@ -9,6 +13,18 @@ public class Client {
     private String login;
     private String email;
     private String password;
+
+    private List<Integer> booksFor1;
+    private List<Integer> booksFor2;
+
+    private transient List<Books> books1;
+    private transient List<Books> books2;
+
+    public void setBooks(){
+        List<Books> books = FileService.readFile();
+        books1 = booksFor1.stream().map(id -> books.get(id - 1)).collect(Collectors.toList());
+        books2 = booksFor2.stream().map(id -> books.get(id - 1)).collect(Collectors.toList());
+    }
 
 
     public String getLogin() {
