@@ -2,7 +2,9 @@ package kz.attractor.java.server;
 
 public enum ResponseCodes {
     OK(200),
-    NOT_FOUND(404);
+    NOT_FOUND(404),
+
+    ALREADY_EXISTS(100);
 
     private final int code;
 
